@@ -1,0 +1,20 @@
+{
+  "name": "image-workflow-local",
+  "interface": {
+    "displayName": "Image Workflow Local"
+  },
+  "plugins": [
+    {
+      "name": "image-workflow",
+      "source": {
+        "source": "local",
+        "path": "./plugins/image-workflow"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

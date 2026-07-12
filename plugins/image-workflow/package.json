@@ -1,0 +1,14 @@
+{
+  "name": "image-workflow",
+  "version": "0.1.0",
+  "description": "Codex 本地图像生成、编辑和批量工作流插件。",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node --check scripts/image-workflow.mjs && node --check src/adapters/openai-images.mjs && node --check src/adapters/fhl-responses.mjs && node --check src/adapters/registry.mjs && node --check src/cli/args.mjs && node --check src/cli/commands.mjs && node --check src/config/paths.mjs && node --check src/config/profile-store.mjs && node --check src/domain/job-service.mjs && node --check src/domain/scheduler.mjs && node --check src/domain/workflow.mjs && node --check src/infra/http-client.mjs && node --check src/infra/output-store.mjs && node --check src/util/errors.mjs && node --check src/util/fs.mjs && node --check src/util/images.mjs",
+    "test": "node --test"
+  }
+}

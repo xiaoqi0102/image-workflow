@@ -1,0 +1,30 @@
+{
+  "name": "image-workflow",
+  "version": "0.1.0",
+  "description": "在 Codex 中配置 OpenAI 兼容 Images API 或 Responses API，生成、编辑和批量处理图像。",
+  "author": {
+    "name": "Image Workflow Local"
+  },
+  "keywords": [
+    "image-generation",
+    "image-editing",
+    "openai-compatible",
+    "responses-api",
+    "batch-workflow"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Image Workflow",
+    "shortDescription": "通过可配置的 Images API 或 Responses API 生成、编辑和批量处理图像。",
+    "longDescription": "面向 Codex 的本地图像工作流插件。它提供独立 Profile 与多 Worker 调度，支持 OpenAI 兼容 Images API、FHL Responses API、单次及多参考图编辑、mask 编辑、批量提示词和可续跑的通用批量图生图工作流。",
+    "developerName": "Image Workflow Local",
+    "category": "Productivity",
+    "capabilities": ["Write"],
+    "brandColor": "#0F766E",
+    "defaultPrompt": [
+      "配置一个 OpenAI 兼容 Images API Profile。",
+      "使用当前 Profile 生成一张产品展示图。",
+      "用固定参考图和变量图片运行批量图生图工作流。"
+    ]
+  }
+}
